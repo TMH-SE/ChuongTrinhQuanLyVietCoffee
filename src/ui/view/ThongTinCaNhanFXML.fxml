@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="532.0" prefWidth="600.0" style="-fx-background-color: #f0ffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.ThongTinCaNhanController">
+   <children>
+      <Label alignment="CENTER" layoutY="14.0" prefHeight="17.0" prefWidth="600.0" style="-fx-font-weight: bold; -fx-text-fill: #214160;" text="THÔNG TIN CÁ NHÂN">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtHoTen" alignment="TOP_LEFT" editable="false" labelFloat="true" layoutX="14.0" layoutY="66.0" prefHeight="37.0" prefWidth="571.0" promptText="Họ Tên" style="-fx-prompt-text-fill: #214160; -fx-text-fill: #214160;" unFocusColor="#214160">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXDatePicker fx:id="dpNgaySinh" defaultColor="#4059a9" editable="false" layoutX="14.0" layoutY="135.0" prefHeight="37.0" prefWidth="280.0" promptText="Ngày sinh" style="-fx-font-size: 16;" />
+      <JFXTextField fx:id="txtSoCMND" alignment="TOP_LEFT" editable="false" labelFloat="true" layoutX="305.0" layoutY="135.0" prefHeight="37.0" prefWidth="280.0" promptText="Số CMND / Căn Cước" style="-fx-prompt-text-fill: #214160; -fx-text-fill: #214160;" unFocusColor="#214160">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDiaChi" alignment="TOP_LEFT" editable="false" labelFloat="true" layoutX="15.0" layoutY="203.0" prefHeight="37.0" prefWidth="571.0" promptText="Địa chỉ" style="-fx-prompt-text-fill: #214160; -fx-text-fill: #214160;" unFocusColor="#214160">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSoDT" alignment="TOP_LEFT" editable="false" labelFloat="true" layoutX="14.0" layoutY="271.0" prefHeight="37.0" prefWidth="280.0" promptText="Số điện thoại" style="-fx-prompt-text-fill: #214160; -fx-text-fill: #214160;" unFocusColor="#214160">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmail" alignment="TOP_LEFT" editable="false" labelFloat="true" layoutX="306.0" layoutY="271.0" prefHeight="37.0" prefWidth="280.0" promptText="Email" style="-fx-prompt-text-fill: #214160; -fx-text-fill: #214160;" unFocusColor="#214160">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <Separator layoutX="13.0" layoutY="329.0" prefHeight="0.0" prefWidth="571.0" />
+      <Label alignment="CENTER" layoutY="338.0" prefHeight="17.0" prefWidth="600.0" style="-fx-font-weight: bold; -fx-text-fill: #214160;" text="THÔNG TIN TÀI KHOẢN">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTenDN" alignment="TOP_LEFT" editable="false" labelFloat="true" layoutX="15.0" layoutY="395.0" prefHeight="37.0" prefWidth="571.0" promptText="Tên đăng nhập" style="-fx-prompt-text-fill: #214160; -fx-text-fill: #214160;" unFocusColor="#214160">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="psfMatKhau" editable="false" labelFloat="true" layoutX="15.0" layoutY="461.0" prefHeight="37.0" prefWidth="571.0" promptText="Mật Khẩu" style="-fx-text-fill: #214160; -fx-prompt-text-fill: #214160;" unFocusColor="#214160">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXPasswordField>
+   </children>
+</AnchorPane>

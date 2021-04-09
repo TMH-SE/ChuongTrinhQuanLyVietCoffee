@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.MainController">
+   <top>
+      <BorderPane prefHeight="80.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <MenuBar prefHeight="40.0" prefWidth="801.0" style="-fx-background-color: #c0c0c0;">
+               <menus>
+                  <Menu mnemonicParsing="false" text="VietCoffee">
+                     <items>
+                        <MenuItem fx:id="menuDangNhap" mnemonicParsing="false" text="Đăng nhập" />
+                        <MenuItem fx:id="menuTTCaNhan" disable="true" mnemonicParsing="false" text="Thông tin cá nhân" />
+                        <MenuItem fx:id="menuDoiMatKhau" disable="true" mnemonicParsing="false" text="Đổi mật khẩu" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="menuDangXuat" disable="true" mnemonicParsing="false" text="Đăng xuất" />
+                     </items>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/cafe.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <HBox prefHeight="42.0" prefWidth="1080.0" style="-fx-background-color: #f0f0f0;" BorderPane.alignment="CENTER">
+               <children>
+                  <ToolBar fx:id="toolbarThanhToanDatMon" disable="true">
+                    <items>
+                      <Button fx:id="btnDatMon" mnemonicParsing="false" text="Đặt món">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/order.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnThanhToan" layoutX="10.0" layoutY="13.0" mnemonicParsing="false" text="Thanh toán">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/thanhtoan.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                    </items>
+                  </ToolBar>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <ToolBar fx:id="toolbarQuanLy" disable="true" prefHeight="42.0" prefWidth="1061.0">
+                    <items>
+                      <Button fx:id="btnQLMonAn" mnemonicParsing="false" text="Quản lý món ăn">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/thucan.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnQLDoUong" layoutX="10.0" layoutY="13.0" mnemonicParsing="false" text="Quản lý đồ uống">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/coffee.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnQLNhanVien" layoutX="66.0" layoutY="13.0" mnemonicParsing="false" text="Quản lý  nhân viên">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/employee.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnQLHoaDon" layoutX="122.0" layoutY="13.0" mnemonicParsing="false" text="Quản  lý hóa đơn">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/hoadon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                    </items>
+                  </ToolBar>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </top>
+   <bottom>
+      <Pane prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #ccc;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="9.0" text="Người truy cập:" />
+            <Label fx:id="lblNhanVien" layoutX="106.0" layoutY="9.0" text="...." />
+         </children></Pane>
+   </bottom>
+   <center>
+      <StackPane fx:id="stackMainContain" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </StackPane>
+   </center>
+</BorderPane>

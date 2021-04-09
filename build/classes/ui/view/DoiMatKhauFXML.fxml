@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="364.0" prefWidth="600.0" style="-fx-background-color: #f0ffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.DoiMatKhauController">
+   <children>
+      <Label alignment="CENTER" layoutY="29.0" prefHeight="17.0" prefWidth="600.0" style="-fx-font-weight: bold; -fx-text-fill: #214160;" text="ĐỔI MẬT KHẨU">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXPasswordField fx:id="psfMatKhauCu" labelFloat="true" layoutX="21.0" layoutY="85.0" prefHeight="37.0" prefWidth="571.0" promptText="Mật Khẩu Cũ" style="-fx-text-fill: #214160; -fx-prompt-text-fill: #214160;" unFocusColor="#214160">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXPasswordField fx:id="psfMatKhauMoi" labelFloat="true" layoutX="21.0" layoutY="152.0" prefHeight="37.0" prefWidth="571.0" promptText="Mật Khẩu Mới" style="-fx-text-fill: #214160; -fx-prompt-text-fill: #214160;" unFocusColor="#214160">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXPasswordField fx:id="psfMatKhauMoi2" labelFloat="true" layoutX="21.0" layoutY="227.0" prefHeight="37.0" prefWidth="571.0" promptText="Nhập Lại Mật Khẩu" style="-fx-text-fill: #214160; -fx-prompt-text-fill: #214160;" unFocusColor="#214160">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="btnLuu" layoutX="14.0" layoutY="309.0" prefHeight="37.0" prefWidth="280.0" style="-fx-background-color: #1875ce; -fx-font-weight: 700; -fx-text-fill: #fff;" text="LƯU" />
+      <JFXButton fx:id="btnHuy" layoutX="307.0" layoutY="313.0" prefHeight="37.0" prefWidth="280.0" style="-fx-background-color: #1875ce; -fx-font-weight: 700; -fx-text-fill: #fff;" text="HỦY" />
+   </children>
+</AnchorPane>
